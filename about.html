@@ -2,4 +2,9 @@
 layout: default
 title: About me
 ---
-<h1> About page </h1>
+<h1> About me </h1>
+
+{% assign files = site.static_files | where_exp: "item", "item.extname == '.pdf'" %}
+{% for file in files %}
+<p>Click <a href="{{ file.path }}">Here</a> to download my resume </p>
+{% endfor %}
