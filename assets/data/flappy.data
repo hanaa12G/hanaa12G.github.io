@@ -1,0 +1,7 @@
+screen_size=4,6
+ground_height=0.1
+pipe_height=1.6
+pipe_width=0.8
+player_density=0.2
+player_velocity=-1
+flap_velocity=3
