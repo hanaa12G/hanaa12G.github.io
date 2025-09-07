@@ -1,2 +1,6 @@
 Gemfile.lock
 _site/
+.bundle/
+*.swp
+.jekyll-metadata
+.ruby-version
