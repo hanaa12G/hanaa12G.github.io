@@ -30,7 +30,15 @@ told me that I need to do these following:
 - [X] Add a certificate to my domain
 - [X] Jekyll: Make photos visible in final blog post
 - [ ] Jekyll: Make photos have reasonable size, or some way to adjust their size
-- [ ] Overwrite old github page with this page
+- [X] Overwrite old github page with this page
+- [ ] Jekyll: Draft for a style
+    - [ ] Collect some ideas
+    - [ ] Jekyll: Design a landing page
+    - [ ] Choose a font
+    - [ ] Define theme with basic color scheme
+- [.] Jekyll: Created pin post/sections for streaming/notification
+    - [X] Jekyll: Find out how to separate pin post
+    - [ ] Jekyll: Design root page
 
 ## Buying a domain
 
@@ -98,7 +106,100 @@ Nevermind, just after a few minutes it actually enable https for my page
 
 ## Jekyll
 
+### Store screenshot
+
 Let store screenshot for this blog somewhere. Jekyll documentation page says that
 we can store in `assets` directory and the files will be automatically copied when
 we deploy. That's good. Then I use the syntax `![imgaee](url)` to actuall display
 the image. But man it's very large.
+
+### Pin post
+
+Document doesn't mention how to customize the post, but I see something interesting
+within the code example.
+{% raw %}
+```html
+<h1>My blog posts</h1>
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <h2><a href="{{ post.url }}"> {{ post.title }}</a></h2>
+    {{ post.excerp }}
+  </li>
+  {% endfor %}
+</ul>
+```
+{% endraw %}
+
+`site.posts` are mentioned in documentation, and each `post` should be a Post object.
+Then in the loop it access `post.url`, `post.title`, and `post.excerp`. When I open
+each post page, it use *front matter* to define some meta data for a page, including
+`title`. So I immediately thought that: what if I add a `pin: True` in that section
+and access it in the index page. Like this
+{% raw %}
+```html
+<!-- same as before -->
+  <li>
+    <h2><a href="{{ post.url }}"> {{ post.title }}</a></h2>
+    {{ post.pin }}
+  </li>
+<!-- same as before -->
+```
+{% endraw %}
+
+It works as I expect, now I can modify each page and mark them pinned. And in `post.html`
+I need to separate them into 2 different list. First list containing pinned post
+should be display first and stay in top (sidebar)
+
+### Code block is replaced by Jekyll
+
+The example above was not able to display correctly if I don't add raw/endraw tags
+because by default Jekyll will process Liquid everywhere. 
+
+
+### Collecting some ideas for my site
+
+This section also keeps the link to some amazing blog I came across today, I haven't
+had time to read each acticle entirely but will come back once my task is done.
+
+#### [kube.io](https://kube.io/blog/liquid-glass-css-svg)
+
+This site has simple and straight landing page. Landing page is contained within
+a single page, so we don't need scrolling. The "Hero Section" is just a heading
+element that says "Hello. I build software & design". Below "Hero Section" is the
+list of most recent posts and then the contact information. This entire landing
+page is fit inside the content area and does not span the window's width.
+
+![Landing page](/assets/images/screenshots/kube_io_landing_page.png)
+
+
+Rating the color, This site choose a simple combination of colors: dark background,
+white-ish for foreground and a blue-purple color for links, highlighted, keywords,
+and code section.
+
+The animation is a nice when I hover on the logo, it spins when I click. The logo
+is a cube which I think I've seen this kind of design somewhere.
+
+The font name is: Inter, InterVariable
+
+
+#### [dbos.dev](https://www.dbos.dev/blog/durable-queues)
+
+I can see this site's purpose is to go commercially when jumped into the landing
+page. It has full bleed design. And it got many following sections after the hero:
+features, testimonial, footer, etc. But scrolling down I can see this is just an
+attempt, and following sections are weird organized and I feel these are just template
+they put on to fill in the space. But following the links, it makes me think this
+is legit again, a little confusing.
+
+I feel the page has a boxy design, which use a lot of highlighted border. I don't 
+recorgnize the color scheme from this site.
+
+Font family: Ibmplexsans, Arial, sans-serif
+Landing page:
+
+![landing page](/assets/images/screenshots/dbos-landing.png)
+
+Blog page:
+
+![blog](/assets/images/screenshots/dbos-blog.png)
