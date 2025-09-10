@@ -2,6 +2,7 @@
 layout: default
 title: (C++) Write a custom asynchronous operation with Boost Asio
 author: Hana Saitou (hanasou)
+pin: True
 ---
 
 # Problem

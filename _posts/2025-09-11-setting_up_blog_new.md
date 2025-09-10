@@ -1,12 +1,12 @@
 ---
-layout: default
-title: Setting up the blog
+layout: blog
+title: Setting up the blog (New)
 author: Hana Saitou (hanasou)
 status: Incomplete
 ---
 
 
-## The reason
+## The reason {#my_class}
 
   Recently I noticed that Linkedin has blocked my blog page, which I host using   
 Cloudflare. Secondly, I'm in need to post my coding stream, but doing so on Linkedin  
@@ -131,6 +131,8 @@ within the code example.
 ```
 {% endraw %}
 
+
+
 `site.posts` are mentioned in documentation, and each `post` should be a Post object.
 Then in the loop it access `post.url`, `post.title`, and `post.excerp`. When I open
 each post page, it use *front matter* to define some meta data for a page, including
@@ -150,6 +152,16 @@ and access it in the index page. Like this
 It works as I expect, now I can modify each page and mark them pinned. And in `post.html`
 I need to separate them into 2 different list. First list containing pinned post
 should be display first and stay in top (sidebar)
+
+{% raw %}
+
+```c++
+int main(int argc, char** argv) {
+    return 0;
+}
+```
+
+{% endraw %}
 
 ### Code block is replaced by Jekyll
 
