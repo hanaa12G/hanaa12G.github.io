@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
+:root {
+    --primary-dark-bg-color: #100e08;
+    --secondary-dark-bg-color: #181212;
+    --primary-dark-hl-color: #9f5f33;
+    --primary-dark-link-color: #bf806f;
+}
 .sansation-light {
   font-family: "Sansation", sans-serif;
   font-weight: 300;
@@ -37,7 +41,7 @@
 }
 
 body {
-    background-color: #100e08;
+    background-color: var(--primary-dark-bg-color);
     color: #ababef;
 
     max-width: 600px;
@@ -51,6 +55,18 @@ body img {
 }
 
 div:has(> pre > code) {
-    border: 1px #abbafe dotted;
+    border: 2px dotted;
+    border-color: var(--primary-dark-bg-color);
     padding: 0 1rem;
+}
+
+:not(pre) > code {
+    background-color: var(--secondary-dark-bg-color);
+    margin-left: 3px;
+    margin-right: 3px;
+    color: var(--primary-dark-hl-color);
+}
+
+a, a:visited, a:hover, a:active {
+    color: var(--primary-dark-link-color);
 }
