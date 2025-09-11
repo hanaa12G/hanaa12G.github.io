@@ -26,12 +26,15 @@ told me that I need to do these following:
 - [X] Jekyll: Make photos visible in final blog post
 - [ ] Jekyll: Make photos have reasonable size, or some way to adjust their size
 - [X] Overwrite old github page with this page
-- [o] Jekyll: Draft for a style
+- [.] Jekyll: Draft for a style
     - [ ] Collect some ideas
     - [ ] Jekyll: Design a landing page
     - [X] Choose a font
     - [ ] Define theme with basic color scheme
     - [X] Code highlighter
+    - [ ] Update navigation bar
+    - [ ] Labels
+    - [ ] Last updated
 - [.] Jekyll: Created pin post/sections for streaming/notification
     - [X] Jekyll: Find out how to separate pin post
     - [ ] Jekyll: Design root page

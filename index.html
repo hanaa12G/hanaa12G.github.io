@@ -4,12 +4,7 @@ title: Home
 ---
 
 <h1>Hello, World!</h1>
+<p> The site is still under development @@~</p>
+<p> Please go to <a href="/posts">Posts</a> to see my posts, or <a href="/about">About me</a> to view my resume</p>
+<p> I'm open for any discussion for jobs, projects, freelacing opportunities :)</p>
 
-<ul>
-  {% for post in site.posts %}
-  <li>
-    <h2><a href="{{ post.url }}"> {{ post.title }}</a></h2>
-    {{ post.excerp }}
-  </li>
-  {% endfor %}
-</ul>
