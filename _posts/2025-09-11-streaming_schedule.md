@@ -6,9 +6,8 @@ tags: [status]
 pinned: True
 ---
 
-# Today stream:
-
-I'm streaming on Youtube today: [link](https://youtube.com/live/udeVzD1c_SM?feature=share)
+# Past streams
+* [2025-09-13](https://youtube.com/live/udeVzD1c_SM?feature=share)
 
 
 
