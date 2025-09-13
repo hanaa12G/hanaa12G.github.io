@@ -1,0 +1,5 @@
+<ul class="tag_list">
+{% for tag in include.tags %}
+    <li><a href="/tag/{{tag | slugify }}" class="link_button">{{ tag }}</a></li>
+{% endfor %}
+</ul>

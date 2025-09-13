@@ -2,7 +2,7 @@
 layout: default
 title: Streaming Schedule
 author: Hana Saitou (hanasou)
-labels: status
+tags: [status]
 pinned: True
 ---
 
@@ -11,4 +11,5 @@ or watch me coding live, or watch me procrastinating
 
 
 Regards,
+
 Hanasou

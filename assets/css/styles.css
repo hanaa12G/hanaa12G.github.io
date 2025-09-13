@@ -20,7 +20,7 @@ body {
   border-bottom: 1px #888 solid;
 }
 
-.main-navigation > ul, ol {
+.main-navigation > ul, .main-navigation > ol {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;

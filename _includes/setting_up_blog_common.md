@@ -26,15 +26,16 @@ told me that I need to do these following:
 - [X] Jekyll: Make photos visible in final blog post
 - [ ] Jekyll: Make photos have reasonable size, or some way to adjust their size
 - [X] Overwrite old github page with this page
-- [.] Jekyll: Draft for a style
-    - [ ] Collect some ideas
-    - [ ] Jekyll: Design a landing page
+- [O] Jekyll: Draft for a style
+    - [X] Collect some ideas
+    - [ ] ~~Jekyll: Design a landing page~~
     - [X] Choose a font
-    - [ ] Define theme with basic color scheme
+    - [X] Define theme with basic color scheme
     - [X] Code highlighter
-    - [ ] Update navigation bar
-    - [ ] Labels
-    - [ ] Last updated
+    - [ ] ~~Update navigation bar~~
+    - [X] Tags page
+    - [X] Last updated
+    - [X] Store image in cloud
 - [.] Jekyll: Created pin post/sections for streaming/notification
     - [X] Jekyll: Find out how to separate pin post
     - [ ] Jekyll: Design root page
@@ -96,17 +97,13 @@ and add these 2 following lines
 
 ... and there isn't any error show this time.
 
-Tested this out and this is what I get ![screenshot](/assets/images/screenshots/invalid_certificate_domain.png)
+Tested this out and this is what I get ![screenshot](https://drive.google.com/thumbnail?id=1KR9q-Ohodtan8YS4CO8XONYHhdj5Bxg7&sz=w1920-h1080)
 
 ## Add a certificate to `hanasou.dev`
 
-Looks like they handle this for me, great! Let's wait for a few day
-
-![image](/assets/images/screenshots/porkbun_ssl_certificate_notice.png)
-
-## But I want to visit the page, is there a way to access?
-
-Nevermind, just after a few minutes it actually enable https for my page
+Looks like they handle this for me. After like 10 minutes I the previous error was
+gone
+![image](https://drive.google.com/thumbnail?id=1COUYQe1gh4R-RNaYWk3mDIgY8WC4ZwrE&sz=w1920-h1080)
 
 ## Jekyll
 
@@ -178,67 +175,13 @@ because by default Jekyll will process Liquid everywhere.
 This section also keeps the link to some amazing blog I came across today, I haven't
 had time to read each acticle entirely but will come back once my task is done.
 
-#### [kube.io](https://kube.io/blog/liquid-glass-css-svg)
-
-This site has simple and straight landing page. Landing page is contained within
-a single page, so we don't need scrolling. The "Hero Section" is just a heading
-element that says "Hello. I build software & design". Below "Hero Section" is the
-list of most recent posts and then the contact information. This entire landing
-page is fit inside the content area and does not span the window's width.
-
-![Landing page](/assets/images/screenshots/kube_io_landing_page.png)
-
-
-Rating the color, This site choose a simple combination of colors: dark background,
-white-ish for foreground and a blue-purple color for links, highlighted, keywords,
-and code section.
-
-The animation is a nice when I hover on the logo, it spins when I click. The logo
-is a cube which I think I've seen this kind of design somewhere.
-
-The font name is: Inter, InterVariable
-
-
-#### [dbos.dev](https://www.dbos.dev/blog/durable-queues)
-
-I can see this site's purpose is to go commercially when jumped into the landing
-page. It has full bleed design. And it got many following sections after the hero:
-features, testimonial, footer, etc. But scrolling down I can see this is just an
-attempt, and following sections are weird organized and I feel these are just template
-they put on to fill in the space. But following the links, it makes me think this
-is legit again, a little confusing.
-
-I feel the page has a boxy design, which use a lot of highlighted border. I don't 
-recorgnize the color scheme from this site.
-
-Font family: Ibmplexsans, Arial, sans-serif
-Landing page:
-
-My rating: 3/5 (Normal)
-
-![landing page](/assets/images/screenshots/dbos-landing.png)
-
-Blog page:
-
-![blog](/assets/images/screenshots/dbos-blog.png)
-
-My rating: 2/5 (Not very bad)
-
-
-#### [glfmm.io](https://glfmn.io/posts/zig-error-patterns/)
-
-
-#### [ciesie.com](https://ciesie.com/post/tagged_unions/)
-
-
-
-#### [stopa.io](https://stopa.io/post/297)
-
-#### [xeiaso.net](https://xeiaso.net/)
-
-
-#### [maurycyz.com](https://maurycyz.com/misc/ads/)
-
+1. [kube.io](https://kube.io/blog/liquid-glass-css-svg)
+2. [dbos.dev](https://www.dbos.dev/blog/durable-queues)
+3. [glfmm.io](https://glfmn.io/posts/zig-error-patterns/)
+4. [ciesie.com](https://ciesie.com/post/tagged_unions/)
+5. [stopa.io](https://stopa.io/post/297)
+6. [xeiaso.net](https://xeiaso.net/)
+7. [maurycyz.com](https://maurycyz.com/misc/ads/)
 
 ### Jekyll: Code highlighter
 
@@ -270,3 +213,30 @@ rougify style monokai > assets/css/code_highlight.css
 And it just works, if you read this block later and the style is not monokai, either
 I use different style or I overwritten some color in that file.
 
+
+### Jekyll: Tags page
+
+Jekyll supports tags under `page.tags`, and they only for display. I want it to
+to have a little more feature: Filtering post by tags, when user clicks on a tag
+it will send us to a page that show all the posts having this tag. From my research,
+Jekyll doesn't support this automatically, as Jekyl only serve pages statically, and
+adding a new tag won't rerender the page. We either rely on javascript to filter
+posts, but I don't want to mess with javascript at the moment because it hook me
+up on doing some page animation!
+
+I come up with a solution: Render each filter page by script. I wrote a python
+script that I will run periodically, this script will scan all the tags and render
+a file under `tag/<tag_name>html`. Content of all page are almost the same, they
+only differ a single Front Matter property named `tag`. Each page will include a
+template I prepared beforehand, passing the tag. The template will then filter to
+only render matched post from every post of the site.
+
+### Jekyll: Store image
+
+I use Google Drive to store my image, but there's a catch, Google does not allow
+us to embed direct link to image url. We can only use an `<iframe>` on our site to
+display it. This may goes againts my normal way of rendering image by `<img>`. Haven't
+try using `<iframe>` yet but I work around it from this [stack overflow question](https://stackoverflow.com/questions/15557392/how-do-i-display-images-from-google-drive-on-a-website).
+
+The output images are not in high quality but they're enough for casual views. If
+I ever want to share a HD image I will put the link under the image itself.

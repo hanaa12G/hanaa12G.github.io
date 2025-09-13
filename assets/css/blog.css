@@ -1,6 +1,8 @@
 :root {
     --primary-dark-bg-color: #100e08;
     --secondary-dark-bg-color: #181212;
+    --primary-dark-fg-color: #ababef;
+    --secondary-dark-fg-color: #9a9ade;
     --primary-dark-hl-color: #9f5f33;
     --primary-dark-link-color: #bf806f;
 }
@@ -42,7 +44,7 @@
 
 body {
     background-color: var(--primary-dark-bg-color);
-    color: #ababef;
+    color: var(--primary-dark-fg-color);
 
     max-width: 600px;
     margin: 0 auto;
@@ -67,6 +69,38 @@ div:has(> pre > code) {
     color: var(--primary-dark-hl-color);
 }
 
-a, a:visited, a:hover, a:active {
+a, a:visited, a:hover, a:active, a:link {
     color: var(--primary-dark-link-color);
+}
+
+.tag_list > li {
+    display: inline-block;
+}
+.link_button {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0em 0.5em;
+    background: var(--secondary-dark-bg-color);
+    color: var(--primary-dark-fg-color);
+}
+
+.link_button:hover {
+    cursor: pointer;
+}
+
+#main_navigation > ol, #main_navigation > ul {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    justify-content: flex-end;
+    border-bottom: solid 1px var(--primary-dark-fg-color);
+
+}
+
+#main_navigation * {
+    display: block;
+
+}
+#main_navigation a {
+    text-decoration: none;
 }

@@ -2,14 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="/assets/css/styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/assets/css/blog.css"/>
+    <link rel="stylesheet" href="/assets/css/code_highlight.css"/>
     <title> {{ page.title }} </title>
   </head>
 
   <body>
     {% include navigation.html %}
-    <div>
-        {{ content }}
-    </div>
+    {{ content }}
+    <p> Last updated: {{ page.path | file_modified_time | date: "%Y-%m-%d" }}</p>
   </body>
 </html>

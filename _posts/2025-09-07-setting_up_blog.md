@@ -2,7 +2,7 @@
 layout: default
 title: Setting up the blog
 author: Hana Saitou (hanasou)
-labels: status,jekyll,css,html,design
+tags: [status, jekyll, css, html, design]
 Pinned: False
 ---
 
