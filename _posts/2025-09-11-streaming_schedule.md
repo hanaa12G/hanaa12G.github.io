@@ -6,9 +6,6 @@ tags: [status]
 pinned: True
 ---
 
-# Today stream
-I'm streaming now: [Youtube](https://youtube.com/live/E0JB1fUApNY?feature=share)
-
 # Past streams
 * [2025-09-20](https://www.youtube.com/live/E0JB1fUApNY): Leetcode questions, 1 solved total :(
 * [2025-09-13](https://youtube.com/live/udeVzD1c_SM?feature=share)
