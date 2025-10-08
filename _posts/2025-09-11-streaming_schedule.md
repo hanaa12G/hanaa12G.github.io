@@ -6,6 +6,10 @@ tags: [status]
 pinned: True
 ---
 
+# Today streams
+
+Let's do some leetcode questions: https://youtube.com/live/8JpbIJLON-A?feature=share
+
 # Past streams
 * [2025-09-20](https://www.youtube.com/live/E0JB1fUApNY): Leetcode questions, 1 solved total :(
 * [2025-09-13](https://youtube.com/live/udeVzD1c_SM?feature=share)
