@@ -2,6 +2,7 @@
 layout: default
 title: LOL, my crappy birb game on browser
 author: Hana Saitou (hanasou)
+last_modified_at: 2025-03-11 23:56:27 +0700
 ---
 # LOL, my crappy birb game
 

@@ -4,6 +4,11 @@ title: About me
 ---
 <h1> About me </h1>
 
+<ul>
+    <li> My Linked in: <a href="https://www.linkedin.com/in/khoalda/">hanaa12G</a></li>
+    <li> My Leetcode account: <a href="https://leetcode.com/u/hanaa12G/">khoalda</a></li>
+</ul>
+
 {% assign files = site.static_files | where_exp: "item", "item.extname == '.pdf'" %}
 {% for file in files %}
 <p>Click <a href="{{ file.path }}">Here</a> to download my resume </p>

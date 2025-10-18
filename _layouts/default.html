@@ -12,6 +12,8 @@
   <body>
     {% include navigation.html %}
     {{ content }}
-    <p> Last updated: {{ page.path | file_modified_time | date: "%Y-%m-%d" }}</p>
+    {% if page.last_modified_at %}
+    <p> Last updated: {{ page.last_modified_at }}</p>
+    {% endif %}
   </body>
 </html>
