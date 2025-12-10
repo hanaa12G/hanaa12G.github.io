@@ -71,3 +71,24 @@ later requests. I stuck in infinite chain of redirection between `/login` page
 because that site only use authorization tokens for first request and after that
 it uses cookies for accessing resources.
 
+
+## `ibus` cache
+
+When add a new component xml file, try clear the cache first or the program won't
+look into directory again. I have to clean `~/.cache/ibus/` in order to make it
+to work.
+
+> **Debugging tips**: Break or strace on system calls `open`, `openat` to find out
+> why ibus doesn't use my `IBUS_COMPONENT_PATH`. I used and saw it look into cache
+> file only. 
+
+> **TODO**: When debug the issue above, I observe that when I break on certain
+> file in `/user/` (I forgot the actual filename, I think it relates to us key mapping)
+> , I cannot use the keyboard anymore: terminal freeze, firefox doesn't get new
+> key input. When I typed into terminal, every key stroke have a delay of ~15 second
+> but time gap between strokes were exactly the same as how I typed: When I intenitonally
+> typed slow, the time between those character was slow too. CPU usage was file,
+> and system stat was normal. To reproduce:
+    > Use gdb on ibus built with debug from repository. No other changes except
+    > I disabled gtk2 and wayland. Break on `open` and `openat` at above. Then
+    > continue multiple time and get the issue.
