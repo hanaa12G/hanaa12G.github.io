@@ -14,10 +14,10 @@ or watch me coding live, or watch me procrastinating
 
 
 # Today streams
-
-[2025-11-16](https://youtube.com/live/Wg0T7JGjZXQ?feature=share): Follow along Handmade Hero on day 21^st^
+* [2025-12-13](https://youtube.com/live/OMbv3JVC3VQ?feature=share): Let's do some leetcode for upcoming interviews
 
 # Past streams
+* [2025-11-16](https://youtube.com/live/Wg0T7JGjZXQ?feature=share): Follow along Handmade Hero on day 21^st^
 * [2025-11-08](https://youtube.com/live/9Jwz4F1HdhQ?feature=share): Solve some leetcode problems, again!
 * [2025-10-09](https://www.youtube.com/watch?v=8JpbIJLON-A): Leetcode questions, 2 problems solved :D, quite slow but had a fun  
   time going through it
