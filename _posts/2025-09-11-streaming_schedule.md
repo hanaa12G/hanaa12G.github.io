@@ -14,7 +14,7 @@ or watch me coding live, or watch me procrastinating
 
 
 # Today streams
-* [2025-12-13](https://youtube.com/live/OMbv3JVC3VQ?feature=share): Let's do some leetcode for upcoming interviews
+* [2025-12-13](https://youtube.com/live/OMbv3JVC3VQ?feature=share): Let's do some leetcode today. Will have a session this evening too.
 
 # Past streams
 * [2025-11-16](https://youtube.com/live/Wg0T7JGjZXQ?feature=share): Follow along Handmade Hero on day 21^st^
