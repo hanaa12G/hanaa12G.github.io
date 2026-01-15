@@ -14,9 +14,10 @@ or watch me coding live, or watch me procrastinating
 
 
 # Today streams
-* [2026-01-09](https://youtube.com/live/ibSERsC2FgE?feature=share): Let's vibe code and learn golang
+* [2026-01-15](https://youtube.com/live/pjEeuefn22Y?feature=share): Leetcode with golang, aiming for sub 700k rank
 
 # Past streams
+* [2026-01-09](https://youtube.com/live/ibSERsC2FgE?feature=share): Let's vibe code and learn golang
 * [2025-12-13 part 3](https://youtube.com/live/hOvJVeRVU3Y?feature=share): Let's continue doing some leetcode
 * [2025-12-13 part 2](https://youtube.com/live/9FZlVVuR3sU?feature=share): Let's continue doing some leetcode
 * [2025-12-13](https://youtube.com/live/OMbv3JVC3VQ?feature=share): Let's do some leetcode today. Will have a session this evening too.
