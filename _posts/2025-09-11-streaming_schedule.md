@@ -14,9 +14,10 @@ or watch me coding live, or watch me procrastinating
 
 
 # Today streams
-* [2026-01-20](https://youtube.com/live/X-VafzOwzJU?feature=share): We just need to finish 1 problem!!!
+* [2026-01-21](https://youtube.com/live/o9OLlJl_h0w?feature=share): daily practice :^)
 
 # Past streams
+* [2026-01-20](https://youtube.com/live/X-VafzOwzJU?feature=share): We just need to finish 1 problem!!!
 * [2026-01-15](https://youtube.com/live/pjEeuefn22Y?feature=share): Leetcode with golang, aiming for sub 700k rank
 * [2026-01-09](https://youtube.com/live/ibSERsC2FgE?feature=share): Let's vibe code and learn golang
 * [2025-12-13 part 3](https://youtube.com/live/hOvJVeRVU3Y?feature=share): Let's continue doing some leetcode
