@@ -14,9 +14,10 @@ or watch me coding live, or watch me procrastinating
 
 
 # Today streams
-* [2026-02-04](https://youtube.com/live/jf0qxy6An0E?feature=share): Continue our simple chat app!
+* [2026-02-05](https://youtube.com/live/k3pjr41a5q0?feature=share): Let's try to clone a chat layout with sidebar.
 
 # Past streams
+* [2026-02-04](https://youtube.com/live/jf0qxy6An0E?feature=share): Continue our simple chat app!
 * [2026-01-21](https://youtube.com/live/o9OLlJl_h0w?feature=share): daily practice :^)
 * [2026-01-20](https://youtube.com/live/X-VafzOwzJU?feature=share): We just need to finish 1 problem!!!
 * [2026-01-15](https://youtube.com/live/pjEeuefn22Y?feature=share): Leetcode with golang, aiming for sub 700k rank
