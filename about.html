@@ -2,14 +2,72 @@
 layout: default
 title: About me
 ---
-<h1> About me </h1>
 
+<h1 id="khoa-do-anh-le">Khoa, Do-Anh Le</h1>
+<hr />
+<h2 id="contact-information">Contact Information</h2>
 <ul>
-    <li> My Linked in: <a href="https://www.linkedin.com/in/khoalda/">hanaa12G</a></li>
-    <li> My Leetcode account: <a href="https://leetcode.com/u/hanaa12G/">khoalda</a></li>
+<li>Email: <a
+href="mailto:ledoanhkhoa123@outlook.com.vn">ledoanhkhoa123@outlook.com.vn</a></li>
+<li>LinkedIn: <a
+href="https://www.linkedin.com/in/khoalda/">linkedin.com/in/khoalda/</a></li>
+<li>Website: <a href="https://hanasou.dev">hanasou.dev</a>
+(Unmaintained, but it’s there)</li>
+<li>Location: Ho Chi Minh City, Vietnam</li>
 </ul>
-
-{% assign files = site.static_files | where_exp: "item", "item.extname == '.pdf'" %}
-{% for file in files %}
-<p>Click <a href="{{ file.path }}">Here</a> to download my resume </p>
-{% endfor %}
+<h2 id="core-skills">Core Skills</h2>
+<ul>
+<li>C++ (Primary), Python.</li>
+<li>Linux operations and development.</li>
+<li>System Debugging, Performance Optimization.</li>
+</ul>
+<hr />
+<h2 id="work-experience">Work Experience</h2>
+<h3 id="software-engineer-senior-software-engineer-larion-jsc">Software
+Engineer / Senior Software Engineer | Larion JSC</h3>
+<p>July 2022 – Present | Ho Chi Minh City, VN</p>
+<ul>
+<li>Maintain and improve a complex C++ data pipeline for a quant
+investment firm. Ensure seamless transformation from vendor datasets
+(some are massive) into proprietary formats.</li>
+<li>Responsible for data correctness and fixing defects in output and
+enables trading algorithms to handle billion-dollar volumes without
+crashing or miscalculating.</li>
+<li>Regularly profile and optimize runtime, disk space, and memory
+usage. Achieved significant performance gains on several components
+through refactoring.</li>
+<li>Develop internal tools to automate daily workflows, works with
+various API (Jira, GitLab, Confluence, Test system) to speed up some
+operational tasks. Integrated LLMs for complex, labor-heavy tasks, which
+cut down manual effort significantly.</li>
+<li>Tech stack: <code>#cpp</code>, <code>#linux</code>,
+<code>#python</code>, <code>#sql</code>, <code>#llm</code>,
+<code>#gdb</code></li>
+</ul>
+<h3
+id="internship-junior-software-engineer-dek-technologies-now-endava">Internship
+/ Junior Software Engineer | DEK Technologies (now Endava)</h3>
+<p>September 2020 – July 2022 | Ho Chi Minh City, VN</p>
+<ul>
+<li>VOIP Systems: Contributed to the development of a new VOIP call
+routing system that can reduce 20% of latency for power user. I
+contributed in implementation and testing phase for this project.</li>
+<li>Client Support: Investigated and resolved technical issues raised by
+clients, often involving reproducing some complex networking
+scenario.</li>
+<li>Tech stack: <code>#cpp</code>, <code>#gtest</code>,
+<code>#jenkins</code>, <code>#networking</code>, <code>#linux</code>,
+<code>#python</code>, <code>#tcp/ip</code>, <code>#sip</code>,
+<code>#wireshark</code></li>
+</ul>
+<hr />
+<h2 id="education-certificates">Education &amp; Certificates</h2>
+<ul>
+<li>Bachelor’s Degree in Computer Science | Ho Chi Minh University of
+Technology (HCMUT - BKU)
+<ul>
+<li>GPA: 3.0 / 4.0</li>
+</ul></li>
+<li>TOEIC (2021): Listening &amp; Reading: 890 / 990, Speaking &amp;
+Writing: 240 / 400.</li>
+</ul>

@@ -104,3 +104,25 @@ a, a:visited, a:hover, a:active, a:link {
 #main_navigation a {
     text-decoration: none;
 }
+@media print {
+
+    :root {
+        --primary-dark-bg-color: #F1F4F4;    
+        --secondary-dark-bg-color: #e2e9e9;  
+        --primary-dark-fg-color: #1A1A1A;    
+        --secondary-dark-fg-color: #4A4A4A;  
+
+        --primary-dark-hl-color: #ff5f33;    
+        --primary-dark-link-color: #bf806f;  
+    }
+    @page {
+        margin: 2rem; /* Adjust this value for more/less padding on all sides */
+    }
+
+    body {
+        padding-bottom: 0; /* Clear body padding so the @page margin handles it */
+    }
+    .no-print {
+        display: none !important;
+    }
+}
